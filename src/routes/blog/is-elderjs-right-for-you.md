@@ -3,7 +3,7 @@ title: 'Is Elder.js Right For You?'
 excerpt: 'What types of sites can you build with Elder.js? Can I use it for ______? What parts of the project do most people struggle with?'
 author: Nick Reese
 # slug: common-uses-for-elderjs
----
+--- 
 
 If you're wondering if Elder.js will support your use case we have 1 good rule to help you make that decision:
 

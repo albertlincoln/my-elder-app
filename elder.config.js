@@ -1,5 +1,5 @@
 module.exports = {
-  origin: '', // TODO: update this.
+  origin: 'www.docunext.com', // TODO: update this.
   srcDir: 'src',
   distDir: 'public',
   rootDir: process.cwd(),
@@ -20,6 +20,7 @@ module.exports = {
   plugins: {
     '@elderjs/plugin-markdown': {
       routes: ['blog'],
+      slug: (relative)
     },
     '@elderjs/plugin-browser-reload': {
       // this reloads your browser when nodemon restarts your server.
