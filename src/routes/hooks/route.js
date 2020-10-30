@@ -8,10 +8,11 @@ module.exports = {
     // The hook interface is the "contract" that Elder.js enforces to execute functions on various hooks.
     // You can view the source code here: https://github.com/Elderjs/elderjs/blob/master/src/hookInterface/hookInterface.ts
     const requestObjects = hookInterface.map((hook) => ({
-      slug: hook.hooks
+      slug: hook.hook,
     }));
     return requestObjects;
   },
+  permalink: ({ request }) => `/${request.slug}/`,
   data: ({ request }) => {
     // Data takes the 'request' objects returned from the 'all' function and looks up the hookDetails from the hookInterface.
     const { slug } = request;
